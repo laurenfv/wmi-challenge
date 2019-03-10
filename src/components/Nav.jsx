@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Box, Flex } from '@rebass/grid';
+import HamburgerIcon from '../images/hamburger-icon.svg';
+import Logo from '../images/wmi-logo.svg';
 
 const NavBox = styled(Box)`
   background-color: #261a42;
@@ -9,6 +11,21 @@ const NavBox = styled(Box)`
   justify-content: space-between;
   height: 69px;
   padding: 0;
+`;
+
+const ButtonContainer = styled.button`
+  background-color: #929497;
+  border: none;
+  color: #fff;
+  height: 28px;
+  margin-right: 22px;
+  width: 105px;
+`;
+
+const MenuContainer = styled(Flex)`
+  background-color: #EC008C;
+  height: 69px;
+  width: 69px;
 `;
 
 export const Nav = () => (
@@ -24,11 +41,31 @@ export const Nav = () => (
           flexDirection='row'
           flexWrap='nowrap'
           justifyContent='space-between'
-          m='0 20px'
+          m='0 0 0 20px'
           width={1}>
           <a href='#home'>
-            {/* <MyImage /> */}
+            <img
+              alt="logo"
+              src={Logo}>
+            </img>
           </a>
+          <Flex
+            alignItems='center'
+            flexDirection='row'
+            flexWrap='nowrap'
+            justifyContent='space-between'>
+            <ButtonContainer>
+              SIGN IN / JOIN
+            </ButtonContainer>
+            <MenuContainer
+              alignItems="center"
+              justifyContent="center">
+              <img
+                alt="menu-icon"
+                src={HamburgerIcon}>
+              </img>
+            </MenuContainer>
+          </Flex>
         </Flex>
       </NavBox>
     </nav>
