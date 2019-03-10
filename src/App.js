@@ -1,28 +1,42 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { createGlobalStyle } from 'styled-components';
+import { Box } from '@rebass/grid';
+import Landing from "./pages";
+import Nav from "./components";
 
-class App extends Component {
-  render() {
+const GlobalStyle = createGlobalStyle`
+  html {
+    box-sizing: border-box;
+    font-family: 'Padauk', sans-serif;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+  }
+`;
+
+const App = () => {
+  const renderApp = () => {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Nav />
+        <Landing />
       </div>
     );
-  }
-}
+  };
+
+  return (
+    <Box
+      className='app'
+      height='100%'>
+      <GlobalStyle />
+      {renderApp()}
+    </Box>
+  );
+};
 
 export default App;
