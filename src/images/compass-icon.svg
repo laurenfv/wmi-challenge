@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>compass</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WMI_Fun-Finder" transform="translate(-305.000000, -618.000000)">
+            <g id="Group-46" transform="translate(48.000000, 254.000000)">
+                <g id="compass" transform="translate(257.763700, 364.717300)">
+                    <path d="M26.1064,18.0005 C26.1064,22.4775 22.4774,26.1065 18.0004,26.1065 C13.5224,26.1065 9.8934,22.4775 9.8934,18.0005 C9.8934,13.5225 13.5224,9.8935 18.0004,9.8935 C22.4774,9.8935 26.1064,13.5225 26.1064,18.0005" id="Fill-16" fill="#242D33" fill-rule="evenodd"></path>
+                    <path d="M18,4.935 C10.784,4.935 4.935,10.785 4.935,18 C4.935,25.215 10.784,31.065 18,31.065 C25.216,31.065 31.065,25.215 31.065,18 C31.065,10.785 25.216,4.935 18,4.935 M18,6.034 C24.598,6.034 29.966,11.402 29.966,18 C29.966,24.598 24.598,29.966 18,29.966 C11.402,29.966 6.034,24.598 6.034,18 C6.034,11.402 11.402,6.034 18,6.034" id="Fill-18" fill="#EC008C" fill-rule="evenodd"></path>
+                    <path d="M18,4.935 L18,0" id="Stroke-20" stroke="#EC008C" stroke-width="1.374"></path>
+                    <path d="M18,36.0005 L18,31.0645" id="Stroke-22" stroke="#EC008C" stroke-width="1.374"></path>
+                    <path d="M31.0654,18.0005 L36.0004,18.0005" id="Stroke-24" stroke="#EC008C" stroke-width="1.374"></path>
+                    <path d="M2.84217094e-14,18.0005 L4.935,18.0005" id="Stroke-26" stroke="#EC008C" stroke-width="1.374"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

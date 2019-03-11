@@ -5,16 +5,23 @@ import Landing from "./pages";
 import Nav from "./components";
 
 const GlobalStyle = createGlobalStyle`
+  /* @font-face {
+    font-family: 'DinBlack';
+    src: local('./fonts/DINPro-Black.otf') format("opentype");
+  } */
   html {
+    font-family: sans-serif;
     box-sizing: border-box;
-    font-family: 'Padauk', sans-serif;
   }
   *, *:before, *:after {
     box-sizing: inherit;
   }
   body {
-    background-color: #f9f9f9;
+    background-color: #fff;
     padding: 0;
+    margin: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
 `;

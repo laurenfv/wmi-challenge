@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 import { Box, Flex } from '@rebass/grid';
 import HamburgerIcon from '../images/hamburger-icon.svg';
 import Logo from '../images/wmi-logo.svg';
@@ -43,12 +43,9 @@ export const Nav = () => (
           justifyContent='space-between'
           m='0 0 0 20px'
           width={1}>
-          <a href='#home'>
-            <img
-              alt="logo"
-              src={Logo}>
-            </img>
-          </a>
+          <img
+            alt='logo'
+            src={Logo} />
           <Flex
             alignItems='center'
             flexDirection='row'
@@ -58,12 +55,11 @@ export const Nav = () => (
               SIGN IN / JOIN
             </ButtonContainer>
             <MenuContainer
-              alignItems="center"
-              justifyContent="center">
+              alignItems='center'
+              justifyContent='center'>
               <img
-                alt="menu-icon"
-                src={HamburgerIcon}>
-              </img>
+                alt='menu-icon'
+                src={HamburgerIcon} />
             </MenuContainer>
           </Flex>
         </Flex>
