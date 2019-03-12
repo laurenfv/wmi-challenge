@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex } from '@rebass/grid';
-import SpeechBubble from '../images/speech-bubble-icon.svg';
-import Compass from '../images/compass-icon.svg'
-import Audi from '../images/audi.png';
+import { SpeechBubbleIcon } from '../images';
+import { CompassIcon } from '../images';
+import { Audi } from '../images';
 import Card from '../common/Card';
 import { cardConfigs } from '../utils/card-configs';
 
@@ -20,14 +20,14 @@ const HeroContainer = styled(Flex)`
 
   & > h2 {
     font-size: 26px;
-    margin-bottom: 10px;
     font-weight: 300;
+    margin-bottom: 10px;
   }
 
   & > h3 {
     font-size: 18px;
-    margin-bottom: 10px;
     font-weight: 400;
+    margin-bottom: 10px;
   }
 
   & .speech-bubble {
@@ -46,13 +46,14 @@ const InfoContainer = styled(Flex)`
 
   & > .selection {
     height: 40px;
-    margin-top: -20px;
     margin-bottom: 40px;
+    margin-top: -20px;
 
     & > .left-button {
-      color: #fff;
       background: #242D33;
+      color: #fff;
     }
+
     & > .right-button {
       background: #fff;
       border: #929497 solid 1px;
@@ -63,20 +64,22 @@ const InfoContainer = styled(Flex)`
     & > h4 {
       margin-bottom: 10px;
     }
+
     & > .form-wrapper {
-      height: auto;
       border-bottom: #EC008C solid 3px;
+      height: auto;
       margin-bottom: 50px;
 
       & > .form {
         background: #fff;
         border: #929497 solid 1px;
         padding: 20px;
+
         & > input.input-field {
         border: none;
         font-size: 30px;
         width: 100%;
-      }
+        }
       }
     }
   }
@@ -103,7 +106,7 @@ const Landing = () => (
       <img
         alt='speech-bubble-icons'
         className='speech-bubble'
-        src={SpeechBubble} />
+        src={SpeechBubbleIcon} />
       <img
         alt='audi'
         className='audi'
@@ -155,7 +158,7 @@ const Landing = () => (
             <input className="input-field" type="text" placeholder="Palm Springs, CA" />
             <img
               alt='compass-icon'
-              src={Compass} />
+              src={CompassIcon} />
           </Flex>
         </Flex>
         <h5>LOOK WHAT WE FOUND FOR YOU!</h5>

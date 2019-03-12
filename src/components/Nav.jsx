@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Box, Flex } from '@rebass/grid';
-import HamburgerIcon from '../images/hamburger-icon.svg';
-import Logo from '../images/wmi-logo.svg';
+import { HamburgerIcon } from '../images';
+import { Logo } from '../images';
 
 const NavBox = styled(Box)`
+  align-items: center;
   background-color: #261a42;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 69px;
+  justify-content: space-between;
   padding: 0;
 `;
 

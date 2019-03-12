@@ -13,6 +13,7 @@ const CardWrapper = styled(Flex)`
         font-size: 21px;
         font-weight: 300;
       }
+
       & > h6 {
         color: #808080;
         font-size: 10px;
@@ -24,6 +25,7 @@ const CardWrapper = styled(Flex)`
         font-size: 21px;
         font-weight: 300;
       }
+
       & > h6 {
         color: #808080;
         font-size: 10px;
@@ -42,15 +44,15 @@ const CardWrapper = styled(Flex)`
 
     .tennis-ball {
       align-self: flex-end;
+      height: 80px;
       margin: -20px 20% 0 0;
       width: 80px;
-      height: 80px;
     }
 
     .porsche {
       align-self: flex-end;
-      margin-top: 80px;
       height: 127px;
+      margin-top: 80px;
       width: 192px;
     }
 
@@ -60,9 +62,9 @@ const CardWrapper = styled(Flex)`
   }
   & > .card-tab {
     background-color: #EC008C;
-    height: 70px;
     border-radius: 0 0 15px 15px;
     box-shadow: -1px 0px 22px 1px rgba(0,0,0,0.27);
+    height: 70px;
     margin-top: -25px;
     z-index: 5;
 
