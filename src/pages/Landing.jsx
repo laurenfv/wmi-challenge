@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box, Flex } from '@rebass/grid';
+import { Flex } from '@rebass/grid';
 import SpeechBubble from '../images/speech-bubble-icon.svg';
 import Compass from '../images/compass-icon.svg'
 import Audi from '../images/audi.png';
-import TennisHeader from '../images/tennis-header.jpg';
+import Card from '../common/Card';
+import { cardConfigs } from '../utils/card-configs';
 
 const HeroContainer = styled(Flex)`
   background : linear-gradient(227.46deg, rgba(181, 183, 185, 0) 0%, rgba(181, 183, 185, .4) 100%);
@@ -14,18 +15,18 @@ const HeroContainer = styled(Flex)`
 
   & > h1 {
     font-size: 34px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   & > h2 {
     font-size: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 300;
   }
 
   & > h3 {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 400;
   }
 
@@ -69,54 +70,23 @@ const InfoContainer = styled(Flex)`
 
       & > .form {
         background: #fff;
-        border: #929497 solid 2px;
+        border: #929497 solid 1px;
         padding: 20px;
         & > input.input-field {
         border: none;
         font-size: 30px;
+        width: 100%;
       }
       }
     }
   }
 `;
 
-const Card = styled(Flex)`
-  margin-bottom: 40px;
-
-  & > .card-header-image {
-    background-image: url(${TennisHeader});
-    border-radius: 15px;
-    box-shadow: -1px 0px 22px 1px rgba(0,0,0,0.27);
-    height: 300px;
-    margin-top: 20px;
-    z-index: 100;
-  }
-  & > .card-tab {
-    background-color: #EC008C;
-    height: 70px;
-    border-radius: 0 0 15px 15px;
-    box-shadow: -1px 0px 22px 1px rgba(0,0,0,0.27);
-    margin-top: -25px;
-    z-index: 5;
-  }
-  & > .card-border {
-    background-color: #261a42;
-    height: 35px;
-    border-radius: 0 0 15px 15px;
-    box-shadow: -1px 10px 22px 1px rgba(0,0,0,0.27);
-    margin-top: -25px;
-  }
-
-  & > .titles {
-    & > .left-titles {
-    text-align: left;
-    }
-
-    & > .right-titles {
-    text-align: right;
-    }
-  }
-`;
+const cards = cardConfigs.map(
+  (item, index) => (
+    <Card key={index} {...item.card} />
+  )
+);
 
 const Landing = () => (
   <div className='body'>
@@ -173,63 +143,24 @@ const Landing = () => (
         mb={40}
         width={[1, 1, 1/2]}>
         <h4>FIND YOUR CITY</h4>
-        <Box className='form-wrapper'>
+        <Flex 
+          className='form-wrapper'
+          width={1}>
           <Flex
             as='form'
             alignItems='center'
             className='form'
-            justifyContent='center'>
-            <input className="input-field" type="text" placeholder="PALM SPRINGS, CA" />
+            justifyContent='center'
+            width={1}>
+            <input className="input-field" type="text" placeholder="Palm Springs, CA" />
             <img
               alt='compass-icon'
               src={Compass} />
           </Flex>
-        </Box>
+        </Flex>
         <h5>LOOK WHAT WE FOUND FOR YOU!</h5>
       </Flex>
-      cards test
-      <Flex
-      alignItems='center'
-      justifyContent='space-evenly'
-      flexWrap='wrap'
-      width={1}>
-        <Card
-          alignItems='center'
-          className='card'
-          flexDirection='column'
-          justifyContent='center'
-          width={[1, 1, 1 / 3]}>
-          <Flex
-            alignItems='center'
-            className='titles'
-            justifyContent='space-between'
-            width={1}>
-            <Box className='left-titles'>
-              <h4>test</h4>
-              <h6>test</h6>
-            </Box>
-            <Box className='right-titles'>
-              <h4>test</h4>
-              <h6>test</h6>
-            </Box>
-          </Flex>
-          <Flex
-            alignItems='flex-end'
-            className='card-header-image'
-            width={1}>
-            <h4>BEST ENJOYED WITH</h4>
-          </Flex>
-          <Flex
-            alignItems='flex-end'
-            className='card-tab'
-            width={1}>
-            <h4>BEST ENJOYED WITH</h4>
-          </Flex>
-          <Box
-          className='card-border'
-          width={1} />
-        </Card>
-      </Flex>
+      {cards}
     </InfoContainer>
   </div>
 );

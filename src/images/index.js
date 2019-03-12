@@ -1,0 +1,11 @@
+export { default as Audi } from './audi.png';
+export { default as Balloon } from './balloon.png';
+export { default as CoachellaHeader } from './coachella-header.jpg';
+export { default as CompassIcon } from './compass-icon.svg';
+export { default as HamburgerIcon } from './hamburger-icon.svg';
+export { default as Jeep } from './jeep.png';
+export { default as Porsche } from './porsche.png';
+export { default as SpeechBubbleIcon } from './speech-bubble-icon.svg';
+export { default as TennisBall } from './tennis-ball.png';
+export { default as TennisHeader } from './tennis-header.jpg';
+export { default as Logo } from './wmi-logo.svg';
